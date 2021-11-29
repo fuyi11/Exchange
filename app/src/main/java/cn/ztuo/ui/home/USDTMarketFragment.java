@@ -73,6 +73,11 @@ public class USDTMarketFragment extends MarketBaseFragment implements ICommonVie
     private void initRvContent() {
         LinearLayoutManager manager = new LinearLayoutManager(getActivity(), LinearLayoutManager.VERTICAL, false);
         rvContent.setLayoutManager(manager);
+        Currency currency = new Currency();
+        currencies.add(currency);
+        currencies.add(currency);
+        currencies.add(currency);
+        currencies.add(currency);
         mAdapter = new HomesAdapter( currencies, 1);
 //        adapter.openLoadAnimation(BaseQuickAdapter.SLIDEIN_LEFT);
 //        mAdapter.setOnItemChildClickListener(new BaseQuickAdapter.OnItemChildClickListener() {

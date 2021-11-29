@@ -11,14 +11,14 @@ android {
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
         multiDexEnabled true
     }
-    signingConfigs {
-        rccx {
-            storeFile file('D:/bihuo.jks')
-            storePassword 'bihuo123'
-            keyAlias 'bihuo'
-            keyPassword 'bihuo123'
-        }
-    }
+//    signingConfigs {
+//        rccx {
+//            storeFile file('D:/key/key.jks')
+//            storePassword 'bihuo123'
+//            keyAlias 'bihuo'
+//            keyPassword 'bihuo123'
+//        }
+//    }
 
 
     buildTypes {
@@ -26,13 +26,13 @@ android {
             debuggable true
             minifyEnabled false//开启混淆
             zipAlignEnabled true  //压缩优化
-            signingConfig signingConfigs.rccx
+//            signingConfig signingConfigs.rccx
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
         debug{
             minifyEnabled true   //开启混淆
 //            zipAlignEnabled true  //压缩优化
-            signingConfig signingConfigs.rccx
+//            signingConfig signingConfigs.rccx
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }

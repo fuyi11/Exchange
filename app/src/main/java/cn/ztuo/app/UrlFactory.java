@@ -9,6 +9,7 @@ import cn.ztuo.config.UrlConfig;
 public class UrlFactory {
 
     public static final String host = UrlConfig.BASE_URL;
+//    public static final String host = UrlConfig.MARKET_URL;
 
     //获取充币地址
     public static String getChongbi() {
